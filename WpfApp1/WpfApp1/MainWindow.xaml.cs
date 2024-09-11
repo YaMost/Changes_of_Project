@@ -27,7 +27,7 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SushiSet1.Opacity = 1;
+            MessageBox.Show("Здесь должны отбражатся рекомендации");
         }
     }
 }
