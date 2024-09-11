@@ -20,7 +20,23 @@
         <Rectangle Fill="#090de3" Height="434" Opacity="0.4" Margin="0,0,695,0"/>
         <Button Content="Поиск" Margin="0,50,695,329" Padding="0"/>
         <Button Content="Очередь" Margin="0,105,695,271" Padding="0"/>
-        <Button Content="Рекомендуем" Margin="0,163,695,217" Click="Button_Click" Padding="0"/>
+        <Button Content="Рекомендуем" Margin="0,163,695,217" Click="Button_Click" Padding="0" />
         <Button Content="Button" Margin="0,217,695,164" Padding="0"/>
+        <Grid Margin="110,10,492,217" Opacity="0" x:Name="SushiSet1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="40.04"/>
+            </Grid.RowDefinitions>
+            <Border Grid.RowSpan="2" BorderThickness="3" BorderBrush="Indigo"/>
+            <Image Margin="3,3,3,3" Grid.Row="0" Source="picture1.jpg"/>
+            <TextBlock Margin="3,0,3,4" Text="Сет Генерал Ямамото" TextAlignment="Center" Foreground="White" Grid.Row="1">
+                <TextBlock.Background>
+                    <LinearGradientBrush StartPoint="1, 0" EndPoint="1, 1">
+                        <GradientStop Color="#0b2a78" Offset="0.50"/>
+                        <GradientStop Color="#031647" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Background>
+            </TextBlock>
+        </Grid>
     </Grid>
 </Window>
